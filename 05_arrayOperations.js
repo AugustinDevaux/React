@@ -25,8 +25,9 @@ console.log(multiplyByTwo([1, 2, 3, 4, 5]))
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const filterNameStartByA = array => array.filter(i => i[0] = "A")
-
+// DOUBLE EGAL INTERDIT
+//const filterNameStartByA = array => array.filter(i => i[0] === "A")
+const filterNameStartByA = array => array.filter(i => i.startsWith("A"))
 console.log(filterNameStartByA(["Augustin", "Maelys", "Ismael"]))
 
 /**
