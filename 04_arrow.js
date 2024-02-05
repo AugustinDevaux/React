@@ -7,7 +7,9 @@
  *   - le mot clée "function" est interdis
  */
 
-let arrow1 = () => {}
+let arrow1 = (arg1) => {
+    return arg1 + 1
+}
 
 /**
  * Déclarer une fonction fléchée qui renvoi l'argument + 1
@@ -18,6 +20,8 @@ let arrow1 = () => {}
  *   - le mot clée "return" est interdis
  */
 
-let arrow2 = () => {}
+let arrow2 = (arg2) => arg2 + 1
+
+console.log(arrow1(1), arrow2(7));
 
 module.exports = {arrow1, arrow2};
