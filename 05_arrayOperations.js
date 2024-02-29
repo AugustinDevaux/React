@@ -71,7 +71,13 @@ return acc;
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = (array, id) => {}
-
+const array2 = [
+  {id: 1, name: 'John'},
+  {id: 2, name: 'Doe'},
+  {id: 3, name: 'Foo'},
+  {id: 4, name: 'Bar'},
+  ]
+  const findUserById = (array2, id) => array.find(i => i.id === id)?.name ?? null; console.log(findUserById(array, 5))
+  module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
