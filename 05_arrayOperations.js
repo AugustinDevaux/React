@@ -41,6 +41,16 @@ console.log(filterNameStartByA(["Augustin", "Maelys", "Ismael"]))
   */
 
 const sum = (array) => {}
+let array = ["a", "b", "c", "d"];
+let count = 0;
+for (let i = 0; i < array.length; i++) {
+count++;
+}
+array.reduce((acc, i) => {
+acc = acc + 1;
+console.log(acc, i);
+return acc;
+}, "");
 
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
